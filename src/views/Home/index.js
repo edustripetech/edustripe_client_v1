@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Home = () => <h1>Edustripe home page</h1>;
+const Home = () => <div>Home page</div>;
 
 export default Home;
