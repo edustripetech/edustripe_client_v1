@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './views/Home';
-import Login from './views/Login';
-import ParentSignup from './views/ParentSignup';
-import StudentSignup from './views/StudentSignup';
+import Login from './views/Authentication/Login';
+import ParentSignup from './views/Authentication/ParentSignup';
+import StudentSignup from './views/Authentication/StudentSignup';
 
 import './main.css';
 
