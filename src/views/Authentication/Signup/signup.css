@@ -1,0 +1,36 @@
+.signup-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #109CF1;
+  border-radius: 10px;
+  height: 2.9rem;
+  padding: 10px;
+  outline: none;
+  width: 18.2rem;
+  margin: 10px 0;
+}
+
+.div:hover {
+  background: rgb(88, 177, 233);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .signup-div {
+    margin-top: 30%;
+  }
+}

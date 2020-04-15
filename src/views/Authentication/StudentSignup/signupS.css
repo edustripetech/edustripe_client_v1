@@ -1,0 +1,29 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.custom-select {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.custom-select>select {
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 5px;
+  height: 2.9rem;
+  padding: 5px;
+  outline: none;
+  width: 18.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .signup-page {
+    margin-top: 8%;
+  }
+}
