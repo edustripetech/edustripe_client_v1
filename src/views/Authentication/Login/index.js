@@ -12,7 +12,9 @@ const Login = () => {
   return (
     <div className="login-page">
       <div className="logo">
-        <img alt="editripe logo" src={edustripeLogo} />
+        <Link to="/">
+          <img alt="editripe logo" src={edustripeLogo} />
+        </Link>
       </div>
       <p className="welcome-back">Welcome back</p>
       <div className="form-div">

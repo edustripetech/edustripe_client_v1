@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Button from '../../../components/Button';
 import Input from '../../../components/Input';
 
@@ -21,7 +21,9 @@ const StudentSignup = () => {
   return (
     <div className="signup-page">
       <div className="logo">
-        <img alt="editripe logo" src={edustripeLogo} />
+        <Link to="/">
+          <img alt="editripe logo" src={edustripeLogo} />
+        </Link>
       </div>
       <p className="welcome-back">Create a free student account</p>
       <div className="form-div">

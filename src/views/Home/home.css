@@ -1,5 +1,177 @@
-.signin:hover {
-  background: #fff !important;
-  color: #109CF1 !important;
-  border: 1px solid #109CF1 !important;
+section {
+  /* margin: 5% 0; */
+}
+
+.sec-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 30%;
+  margin: 100px 228px;
+  justify-content: center;
+}
+
+.hero-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 800px;
+  height: 693px;
+}
+
+.lefts {
+  padding: 20px 0;
+}
+
+.lefts>h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 36px;
+}
+
+.lefts> p {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.sec-2-div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.sec-2-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-2-heading> p {
+  font-size: 24px;
+  color: #007EFF;
+  padding: 10px 0;
+}
+
+.sec-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  line-height: 2;
+}
+
+.sec-side >  div > ul > l1 {
+  padding: 10px 0;
+}
+
+.sec-side > h1 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sec-side > p {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.sec-side-img-div {
+  width: 30%;
+}
+
+.sec-2-div-right > h1 {
+  text-align: left;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sec-btn-div {
+  width: 100%;
+}
+
+.sec-2-img {
+  height: 401px;
+  width: 420px;
+}
+
+.sec-3-img {
+  height: 380px;
+  width: 380px;
+}
+
+.sec-4-img {
+  height: 400px;
+  width: 450px;
+}
+
+.sec {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.sec-5-div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.features-div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  margin: 10px auto;
+}
+
+.col {
+  padding: 10px 0;
+  width: 25%;
+}
+
+.col > img, h3, p {
+  padding: 10px 0;
+}
+
+.sec-6-div {
+  width: 70%;
+  background: rgb(229, 90, 40);
+  color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 2;
+}
+
+.sec-6-div > p {
+  width: 85%;
+  margin: 0 auto;
 }

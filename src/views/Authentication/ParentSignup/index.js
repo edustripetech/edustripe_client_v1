@@ -21,7 +21,9 @@ const ParentSignup = () => {
   return (
     <div className="signup-page">
       <div className="logo">
-        <img alt="editripe logo" src={edustripeLogo} />
+        <Link to="/">
+          <img alt="editripe logo" src={edustripeLogo} />
+        </Link>
       </div>
       <p className="welcome-back">Create a free parent account</p>
       <div className="form-div">
