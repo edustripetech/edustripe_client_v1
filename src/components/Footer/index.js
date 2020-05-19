@@ -1,7 +1,10 @@
 import React from 'react';
 import './footer.css';
 
-import edustripesmall from '../../assets/images/edustripesmall.png'
+import edustripesmall from '../../assets/images/edustripesmall.png';
+import Facebook from '../../assets/svg/Facebook';
+import Twitter from '../../assets/svg/Twitter';
+import Linkedin from '../../assets/svg/Linkedin';
 
 const Footer = () => {
   return (
@@ -10,6 +13,9 @@ const Footer = () => {
         <div>
           <div className="footer-img">
             <img alt="" src={edustripesmall} />
+            <Facebook />
+            <Twitter />
+            <Linkedin />
           </div>
         </div>
         <div className="footer-ul-div">

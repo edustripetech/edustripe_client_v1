@@ -31,11 +31,11 @@ const Home = () => {
             </div>
             <div className="lefts">
               <Button
-                label='Request demo'
+                label='Request a demo'
                 id='demo'
                 className="demo"
                 style={{
-                  background: '#109CF1',
+                  background: '#007EFF',
                   color: '#fff',
                   cursor: 'pointer',
                   borderRadius: '5px',
@@ -84,7 +84,7 @@ const Home = () => {
                 id='learnmore'
                 className="learnmore"
                 style={{
-                  background: '#109CF1',
+                  background: '#007EFF',
                   color: '#fff',
                   cursor: 'pointer',
                   borderRadius: '5px',
@@ -123,7 +123,7 @@ const Home = () => {
                 id='learnmore'
                 className="learnmore"
                 style={{
-                  background: '#109CF1',
+                  background: '#007EFF',
                   color: '#fff',
                   cursor: 'pointer',
                   borderRadius: '5px',
@@ -167,7 +167,7 @@ const Home = () => {
                 id='learnmore'
                 className="learnmore"
                 style={{
-                  background: '#109CF1',
+                  background: '#007EFF',
                   color: '#fff',
                   cursor: 'pointer',
                   borderRadius: '5px',
@@ -231,10 +231,10 @@ const Home = () => {
       <section>
         <div className="sec-6-div">
           <h1>Why Edustripe?</h1>
-          <p>Edustripe Helps Educators to build fast-growing, efficient, and stress-free schools, by combining all tools necessary for running a modern school into one platform that is simple, flexible, and reliableEdustripe Helps Educators to build fast-growing, efficient, and stress-free schools, by combining all tools necessary for running a modern school into one platform that is simple, flexible, and reliable</p>
+          <p>Edustripe helps boost enrollment/promote your school brands with our partners, Pay school fees and save easily with us and provide Secure way of storing and easy retrieval of school information/data</p>
           <div className="sec-btn-div">
             <Button
-            label='Learn more'
+            label='Request a free demo now!'
             id='learnmore'
             className="learnmore"
             style={{
@@ -251,7 +251,7 @@ const Home = () => {
               textAlign: 'center',
               alignItems: 'center',
               margin: '15px 0',
-              width: '18.5rem',
+              width: '20rem',
             }}
           />
         </div>
