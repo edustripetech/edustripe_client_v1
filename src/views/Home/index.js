@@ -70,12 +70,13 @@ const Home = () => {
             </div>
             <div className="sec-2-div-right sec-side">
               <h1>EDUSTRIPE FOR SCHOOLS</h1>
-              <p>Edustripe geared towards reducing workload and increasing efficiency</p>
+              <p>Edustripe helps Parents plan effectively towards their Children’s development</p>
               <div>
                 <ul>
-                  <li>Instantly-generated reports from exams, tests, and attendance scores.</li>
-                  <li>Better insight info, and control over school activities with easy and fast access to school records.</li>
-                  <li>Elimination of human error and fraud increased revenue from online fees payment.</li>
+                  <li>Set periodical savings goals to pay school fees on time</li>
+                  <li>Access quick loans to pay School Fees</li>
+                  <li>Access all ward’s educational development easily.</li>
+                  <li>Monitor and Track all children’s activities.</li>
                 </ul>
               </div>
               <div className="sec-btn-div">
@@ -107,14 +108,14 @@ const Home = () => {
       </section>
       <section>
         <div className="sec-3-div sec"> 
-          <div className="sec-side">
+          <div className=" scside">
             <h1>EDUTRIPE FOR TEACHERS</h1>
-            <p>Edustripe geared towards reducing workload and increasing efficiency</p>
+            <p>Edustripe provides the necessary tools for Teachers to teach effectively</p>
             <div>
               <ul>
-                <li>Instantly-generated reports from exams, tests, and attendance scores.</li>
-                <li>Better insight info, and control over school activities with easy and fast access to school records.</li>
-                <li>Elimination of human error and fraud increased revenue from online fees payment.</li>
+                <li>Improved welfare programs for Teachers</li>
+                <li>Trainings and certification for Teachers to aid growth and development</li>
+                <li>Custom lesson plans to improve Teaching efficiency.</li>
               </ul>
               </div>
               <div className="sec-btn-div">
@@ -153,12 +154,13 @@ const Home = () => {
           </div>
           <div className="sec-side">
             <h1>EDUSTRIPE FOR PARENT AND CHILDREN</h1>
-            <p>Edustripe geared towards reducing workload and increasing efficiency</p>
+            <p>Edustripe helps Parents plan effectively towards their Children’s development</p>
             <div>
               <ul>
-                <li>Instantly-generated reports from exams, tests, and attendance scores.</li>
-                <li>Better insight info, and control over school activities with easy and fast access to school records.</li>
-                <li>Elimination of human error and fraud increased revenue from online fees payment.</li>
+                <li>Set periodical savings goals to pay school fees on time.</li>
+                <li>Access quick loans to pay School Fees</li>
+                <li>Access all ward’s educational development easily</li>
+                <li>Monitor and Track all children’s activities</li>
               </ul>
               </div>
               <div className="sec-btn-div">
@@ -234,7 +236,7 @@ const Home = () => {
           <p>Edustripe helps boost enrollment/promote your school brands with our partners, Pay school fees and save easily with us and provide Secure way of storing and easy retrieval of school information/data</p>
           <div className="sec-btn-div">
             <Button
-            label='Request a free demo now!'
+            label='Request a free demo!'
             id='learnmore'
             className="learnmore"
             style={{

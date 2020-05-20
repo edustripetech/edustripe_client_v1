@@ -9,7 +9,7 @@
   flex-direction: column;
   padding: 20px 0;
   width: 35%;
-  margin: 5px 130px;
+  margin: 30px 130px;
   justify-content: center;
 }
 
@@ -61,6 +61,16 @@
   font-size: 24px;
   color: #007EFF;
   padding: 10px 0;
+}
+
+.scside {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  line-height: 2;
 }
 
 .sec-side {
@@ -121,7 +131,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5% auto;
+  margin: 10px auto;
 }
 
 .sec-5-div {

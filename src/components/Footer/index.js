@@ -13,9 +13,11 @@ const Footer = () => {
         <div>
           <div className="footer-img">
             <img alt="" src={edustripesmall} />
-            <Facebook />
-            <Twitter />
-            <Linkedin />
+            <div>
+              <Facebook />
+              <Twitter />
+              <Linkedin />
+            </div>
           </div>
         </div>
         <div className="footer-ul-div">
