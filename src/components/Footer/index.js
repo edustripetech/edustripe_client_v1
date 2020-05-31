@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
           <div className="footer-img">
             <img alt="" src={edustripesmall} />
-            <div>
+            <div style={{marginLeft: '60px'}}>
               <Facebook />
               <Twitter />
               <Linkedin />
