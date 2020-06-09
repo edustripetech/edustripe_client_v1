@@ -10,7 +10,9 @@ const Signup = () => {
   return (
     <div className="signup-div">
       <div className="logo">
-        <img alt="editripe logo" src={edustripeLogo} />
+        <Link to="/">
+          <img alt="edustripeLogo logo" src={edustripeLogo} />
+        </Link>
       </div>
       <p className="welcome-back">Create a free account</p>
       <div className="input-div">
