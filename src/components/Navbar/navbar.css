@@ -3,11 +3,11 @@
 }
 
 .nav-div {
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 50px 140px 50px 132px;
 }
 
 .navs {
@@ -21,8 +21,8 @@
 }
 
 .navs > ul>li {
-  padding: 0 3.125rem;
-  font-size: 20px;
+  padding: 0.6rem 3.125rem;
+  font-size: 16px;
   align-items: center;
   display: flex;
 }
@@ -30,7 +30,7 @@
 .navs ul a {
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navs ul a:hover {
@@ -48,4 +48,26 @@
   display: flex;
   justify-content: center;
   outline: none;
+}
+
+@media (max-width: 1024px) {
+  .nav-div {
+    margin: 50px 0 50px 132px;
+  }
+  .navs > ul > li {
+    padding: 0.1rem 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-div {
+    margin: 50px 0 30px 75px;
+  }
+}
+
+@media (min-width: 1560px) {
+  .navs > ul>li {
+    padding: 1rem 5.125rem;
+    font-size: 25px;
+  }
 }

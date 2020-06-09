@@ -22,7 +22,7 @@ const StudentSignup = () => {
     <div className="signup-page">
       <div className="logo">
         <Link to="/">
-          <img alt="editripe logo" src={edustripeLogo} />
+          <img alt="edustripeLogo logo" src={edustripeLogo} />
         </Link>
       </div>
       <p className="welcome-back">Create a free student account</p>

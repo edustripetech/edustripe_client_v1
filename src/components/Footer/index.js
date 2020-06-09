@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
           <div className="footer-img">
             <img alt="" src={edustripesmall} />
-            <div style={{marginLeft: '60px'}}>
+            <div className="footer-socials">
               <Facebook />
               <Twitter />
               <Linkedin />
@@ -38,7 +38,7 @@ const Footer = () => {
             <li className="head">Contact</li>
             <li>Airport road Ikeja Lagos,</li>
             <li>Nigeria</li>
-            <li>08099778866</li>
+            <li className="phoneNumber">08099778866</li>
           </ul>
         </div>
       </div>

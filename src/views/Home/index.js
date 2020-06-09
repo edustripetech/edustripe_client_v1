@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
@@ -15,8 +15,13 @@ import graphreport from '../../assets/images/graphreport.png';
 import learning from '../../assets/images/learning.png';
 import medicalhistory from '../../assets/images/medicalhistory.png';
 import laptopanalytic from '../../assets/images/laptopanalytic.png';
+let scroll = window.scrollY;
 
 const Home = () => {
+  useEffect(() => {
+    console.log(window.innerWidth, window.outerWidth);
+  })
+
   return (
     <div className="homa-page">
       <Navbar />
@@ -41,31 +46,28 @@ const Home = () => {
                   borderRadius: '5px',
                   border: '1px solid #109CF1',
                   outline: 'none',
-                  height: '2rem',
-                  padding: '5px',
-                  height: '2.5rem',
-                  fontSize: '24px',
+                  padding: window.innerWidth > 1560 ? '18px 30px' : '12px 20px',
+                  fontSize: window.innerWidth > 1560 ? '18px' :'13px',
                   textAlign: 'center',
                   alignItems: 'center',
                   margin: '15px 0',
-                  width: '17.5rem',
                 }}
               />
             </div>
           </div>
           <div className="hero-div">
-            <img className="hero-img" alt="hero" src={heroImg} />
+            <img className="hero-img" id="hero-img" alt="hero" src={heroImg} />
           </div>
         </div>
       </section>
-      <section>
+      <section className="sec-2-section">
         <div>
           <div className="sec-2-heading">
             <p>OUR CUSTOMERS</p>
             <h1>Who can use Edustripe</h1>
           </div>
           <div className="sec-2-div">
-            <div className=".sec-side-img-div">
+            <div className="sec-2-side-img-div">
               <img className="sec-2-img" alt="" src={verticalTri} />
             </div>
             <div className="sec-2-div-right sec-side">
@@ -73,10 +75,10 @@ const Home = () => {
               <p>Edustripe helps Parents plan effectively towards their Children’s development</p>
               <div>
                 <ul>
-                  <li>Set periodical savings goals to pay school fees on time</li>
-                  <li>Access quick loans to pay School Fees</li>
-                  <li>Access all ward’s educational development easily.</li>
-                  <li>Monitor and Track all children’s activities.</li>
+                  <li><span>Set periodical savings goals to pay school fees on time</span></li>
+                  <li><span>Access quick loans to pay School Fees</span></li>
+                  <li><span>Access all ward’s educational development easily.</span></li>
+                  <li><span>Monitor and Track all children’s activities.</span></li>
                 </ul>
               </div>
               <div className="sec-btn-div">
@@ -91,14 +93,11 @@ const Home = () => {
                   borderRadius: '5px',
                   border: '1px solid #109CF1',
                   outline: 'none',
-                  height: '2rem',
-                  padding: '5px',
-                  height: '2.5rem',
-                  fontSize: '24px',
+                  padding: window.innerWidth > 1560 ? '18px 30px' : '12px 20px',
+                  fontSize: window.innerWidth > 1560 ? '18px' :'13px',
                   textAlign: 'center',
                   alignItems: 'center',
                   margin: '15px 0',
-                  width: '13rem',
                 }}
               />
             </div>
@@ -106,16 +105,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="sec-3-section">
         <div className="sec-3-div sec"> 
-          <div className=" scside">
-            <h1>EDUTRIPE FOR TEACHERS</h1>
+          <div className="scside">
+            <h1>EDUSTRIPE FOR TEACHERS</h1>
             <p>Edustripe provides the necessary tools for Teachers to teach effectively</p>
             <div>
               <ul>
-                <li>Improved welfare programs for Teachers</li>
-                <li>Trainings and certification for Teachers to aid growth and development</li>
-                <li>Custom lesson plans to improve Teaching efficiency.</li>
+                <li><span>Improved welfare programs for Teachers</span></li>
+                <li><span>Trainings and certification for Teachers to aid growth and development</span></li>
+                <li><span>Custom lesson plans to improve Teaching efficiency.</span></li>
               </ul>
               </div>
               <div className="sec-btn-div">
@@ -130,37 +129,38 @@ const Home = () => {
                   borderRadius: '5px',
                   border: '1px solid #109CF1',
                   outline: 'none',
-                  height: '2rem',
-                  padding: '5px',
-                  height: '2.5rem',
-                  fontSize: '24px',
+                  padding: window.innerWidth > 1560 ? '18px 30px' : '12px 20px',
+                  fontSize: window.innerWidth > 1560 ? '18px' :'13px',
                   textAlign: 'center',
                   alignItems: 'center',
-                  margin: '15px 0',
-                  width: '13rem',
+                  margin: '15px 0'
                 }}
               />
             </div>
           </div>
-          <div className="sec-side-img-div">
-            <img className="sec-3-img" alt="" src={secondhero} />
+          <div className="sec-3-side-img-div">
+            <div>
+              <img className="sec-3-img" alt="" src={secondhero} />
+            </div>
           </div>
         </div>
       </section>
-      <section>
+      <section className="sec-4-div-section">
         <div className="sec-4-div sec">
-          <div className=".sec-side-img-div">
-            <img className="sec-4-img" alt="" src={polygon} />
+          <div className="sec-side-img-div">
+            <div>
+              <img className="sec-4-img" alt="" src={polygon} />
+            </div>
           </div>
-          <div className="sec-side">
+          <div className="sec-4-side">
             <h1>EDUSTRIPE FOR PARENT AND CHILDREN</h1>
             <p>Edustripe helps Parents plan effectively towards their Children’s development</p>
             <div>
               <ul>
-                <li>Set periodical savings goals to pay school fees on time.</li>
-                <li>Access quick loans to pay School Fees</li>
-                <li>Access all ward’s educational development easily</li>
-                <li>Monitor and Track all children’s activities</li>
+                <li><span>Set periodical savings goals to pay school fees on time.</span></li>
+                <li><span>Access quick loans to pay School Fees</span></li>
+                <li><span>Access all ward’s educational development easily</span></li>
+                <li><span>Monitor and Track all children’s activities</span></li>
               </ul>
               </div>
               <div className="sec-btn-div">
@@ -175,21 +175,18 @@ const Home = () => {
                   borderRadius: '5px',
                   border: '1px solid #109CF1',
                   outline: 'none',
-                  height: '2rem',
-                  padding: '5px',
-                  height: '2.5rem',
-                  fontSize: '24px',
+                  padding: window.innerWidth > 1560 ? '18px 30px' : '12px 20px',
+                  fontSize: window.innerWidth > 1560 ? '18px' :'13px',
                   textAlign: 'center',
                   alignItems: 'center',
-                  margin: '15px 0',
-                  width: '13rem',
+                  margin: '15px 0'
                 }}
               />
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section className="sec-5-div-section">
         <div className="sec-5-div">
           <h1>Features</h1>
           <div className="features-div">
@@ -230,33 +227,46 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="sec-6-section">
         <div className="sec-6-div">
-          <h1>Why Edustripe?</h1>
-          <p>Edustripe helps boost enrollment/promote your school brands with our partners, Pay school fees and save easily with us and provide Secure way of storing and easy retrieval of school information/data</p>
-          <div className="sec-btn-div">
-            <Button
-            label='Request a free demo!'
-            id='learnmore'
-            className="learnmore"
-            style={{
-              background: '#109CF1',
-              color: '#fff',
-              cursor: 'pointer',
-              borderRadius: '5px',
-              border: '1px solid #109CF1',
-              outline: 'none',
-              height: '2rem',
-              padding: '5px',
-              height: '2.5rem',
-              fontSize: '24px',
-              textAlign: 'center',
-              alignItems: 'center',
-              margin: '15px 0',
-              width: '20rem',
-            }}
-          />
-        </div>
+          <div className="sec-why-edustripe">
+            <div className="sec-why-edustripe-first">
+              <h1>Why Edustripe?</h1>
+              <p>The real question should be Why not Edustripe?</p>
+            </div>
+            <div className="sec-why-edustripe-second">
+
+            </div>
+          </div>
+          <div className="sec-join-edustripe">
+            <div className="sec-join-edustripe-first">
+              <h1>Join Edustripe Now</h1>
+              <p>Get on board the best Educational community and achieve all your goals.</p>
+            </div>
+            <div className="sec-join-edustripe-second">
+              <div>
+              <Button
+                label='Create an account now!'
+                id='creatAccount'
+                className="creatAccount"
+                style={{
+                  background: '#007EFF',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  borderRadius: '5px',
+                  border: '1px solid #109CF1',
+                  outline: 'none',
+                  padding: '14px 45px',
+                  fontSize: window.innerWidth > 1560 ? '18px' :'13px',
+                  textAlign: 'center',
+                  alignItems: 'center',
+                  margin: '15px 0 0 0',
+                  fontWeight: '400'
+                }}
+              />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />
