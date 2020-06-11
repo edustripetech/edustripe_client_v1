@@ -18,10 +18,6 @@ import laptopanalytic from '../../assets/images/laptopanalytic.png';
 let scroll = window.scrollY;
 
 const Home = () => {
-  useEffect(() => {
-    console.log(window.innerWidth, window.outerWidth);
-  })
-
   return (
     <div className="homa-page">
       <Navbar />
@@ -38,7 +34,7 @@ const Home = () => {
               <Button
                 label='Request a demo'
                 id='demo'
-                className="demo"
+                className="demo desktop-tablet"
                 style={{
                   background: '#007EFF',
                   color: '#fff',
@@ -51,6 +47,24 @@ const Home = () => {
                   textAlign: 'center',
                   alignItems: 'center',
                   margin: '15px 0',
+                }}
+              />
+              <Button
+                label='Get Started'
+                id='register'
+                className="register mobile-only"
+                style={{
+                  background: '#007EFF',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  borderRadius: '5px',
+                  border: '1px solid #109CF1',
+                  outline: 'none',
+                  padding: '9px 40px',
+                  fontSize: '13px',
+                  textAlign: 'center',
+                  alignItems: 'center',
+                  margin: '15px 0 25px 0',
                 }}
               />
             </div>
@@ -192,35 +206,47 @@ const Home = () => {
           <div className="features-div">
             <div className="row">
               <div className="col">
-                <img alt="Learning Analytics" src={laptopanalytic}/>
-                <h3>LEARNING ANALYTICS</h3>
+                <div>
+                  <img alt="Learning Analytics" src={laptopanalytic}/>
+                  <h3>LEARNING ANALYTICS</h3>
+                </div>
                 <p>Group students / teachers, and identify strong and weak students.</p>
               </div>
               <div className="col">
-                <img alt="" src={bankbuilding} />
-                <h3>SAVERS APP</h3>
+                <div>
+                  <img alt="" src={bankbuilding} />
+                  <h3>SAVERS APP</h3>
+                </div>
                 <p>Set daily, weekly, monthly automated savings, educational goals.</p>
               </div>
               <div className="col">
-                <img alt="" src={cloudstorage} />
-                <h3>CLOUD STORAGE</h3>
+                <div>
+                  <img alt="" src={cloudstorage} />
+                  <h3>CLOUD STORAGE</h3>
+                </div>
                 <p>Securely store and easily retrieve school information / data.</p>
               </div>
             </div>
             <div className="row">
               <div className="col">
-                <img alt="" src={learning} />
-                <h3>CUSTOM LEARNING</h3>
+                <div>
+                  <img alt="" src={learning} />
+                  <h3>CUSTOM LEARNING</h3>
+                </div>
                 <p>Custom teachings plans / accessments, and special learning.</p>
               </div>
               <div className="col">
-                <img alt="" src={medicalhistory} />
-                <h3>BUSINESS INTELLIGENCE</h3>
+                <div>
+                  <img alt="" src={medicalhistory} />
+                  <h3>BUSINESS INTELLIGENCE</h3>
+                </div>
                 <p>Manage your finances, get detailed reports on finances.</p>
               </div>
               <div className="col">
-                <img alt="" src={graphreport} />
-                <h3>DATA ANALYTICS</h3>
+                <div>
+                  <img alt="" src={graphreport} />
+                  <h3>DATA ANALYTICS</h3>
+                </div>
                 <p>Analyse historical school data for better school management.</p>
               </div>
             </div>
@@ -231,14 +257,58 @@ const Home = () => {
         <div className="sec-6-div">
           <div className="sec-why-edustripe">
             <div className="sec-why-edustripe-first">
-              <h1>Why Edustripe?</h1>
-              <p>The real question should be Why not Edustripe?</p>
+              <div>
+                <h1>Why Edustripe?</h1>
+                <p>The real question should be Why not Edustripe?</p>
+                <div className="mobile-only sec-why-edustripe-buttons">
+                  <Button
+                    label='Get Started'
+                    id='getstarted'
+                    className="getstarted mobile-only"
+                    style={{
+                      background: '#FFF',
+                      color: '#000',
+                      cursor: 'pointer',
+                      borderRadius: '5px',
+                      border: '1px solid #109CF1',
+                      outline: 'none',
+                      padding: '9px 0',
+                      width: '80%',
+                      fontSize: '16px',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      margin: '15px 0 0 0',
+                      fontWeight: '400'
+                    }}
+                  />
+                  <Button
+                    label='Contact Us'
+                    id='contactus'
+                    className="contactus mobile-only"
+                    style={{
+                      background: 'rgba(194, 207, 224, 0.52)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      borderRadius: '5px',
+                      border: '1px solid #109CF1',
+                      outline: 'none',
+                      padding: '9px 0',
+                      width: '80%',
+                      fontSize: '16px',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      margin: '15px 0 0 0',
+                      fontWeight: '400'
+                    }}
+                  />
+                </div>
+              </div>
             </div>
             <div className="sec-why-edustripe-second">
 
             </div>
           </div>
-          <div className="sec-join-edustripe">
+          <div className="sec-join-edustripe desktop-tablet">
             <div className="sec-join-edustripe-first">
               <h1>Join Edustripe Now</h1>
               <p>Get on board the best Educational community and achieve all your goals.</p>
