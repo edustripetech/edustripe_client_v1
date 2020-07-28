@@ -12,10 +12,34 @@
   align-self: flex-end;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.desktop-tablet {
+  display: flex;
+}
+
 
 @media (min-width: 1560px) {
   .logo img {
     width: 300px;
   }
 
+}
+
+@media (max-width: 425px) {
+  .mobile-only {
+    display: flex !important;
+  }
+
+  .desktop-tablet {
+    display: none !important;
+  }
+
+  .logo img {
+    width: 150px;
+    display: flex;
+    align-self: flex-end;
+  }
 }

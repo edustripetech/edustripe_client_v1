@@ -4,15 +4,19 @@ import { PropTypes } from 'prop-types';
 
 const Button = ({
   label,
+  Ref,
   handleClick,
   children,
   type,
   disabled,
   style,
   className,
+  id
 }) => {
   return (
     <button
+      ref={Ref}
+      id={id}
       style={style}
       disabled={disabled}
       type={type}
@@ -39,6 +43,7 @@ Button.propTypes = {
   type: PropTypes.string,
   disabled: PropTypes.bool,
   className: PropTypes.string,
+  id: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -48,6 +53,7 @@ Button.defaultProps = {
   type: '',
   disabled: false,
   className: '',
+  id: '',
   handleClick: () => {},
 };
 

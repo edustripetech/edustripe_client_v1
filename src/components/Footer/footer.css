@@ -1,6 +1,6 @@
 .footer-div {
   width: 100%;
-  height: 210px;
+  min-height: 210px;
   background:#171E28;
   padding: 30px 0;
 }
@@ -25,9 +25,8 @@
   padding-top: 5px;
 }
 
-.footer-ul-div > ul > .head {
-  font-weight: bold;
-  padding: 15px 0;
+.show-menu {
+  display: none;
 }
 
 .footer-img {
@@ -37,6 +36,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .footer-img > img{ 
   width: 200px;
 }
@@ -50,4 +50,91 @@
 
 .phoneNumber {
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-div {
+    display: flex;
+  }
+  
+  .footer-inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .footer-img {
+    margin: 10px 0 0 -20px;
+  }
+
+  .footer-ul-div{
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-inner {
+    display: flex;
+    width: initial;
+    margin: 22px 22px 40px 22px;
+    flex-direction: column;
+  }
+
+  .footer-ul-div{
+    flex-direction: column;
+  }
+
+  .footer-img {
+    align-items: flex-start;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .footer-img > img {
+    margin-left: -26.5px;
+  }
+
+  .footer-socials {
+    display: flex;
+    width: 72.5%;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+  }
+
+  .footer-ul-div > ul > .head {
+    font-weight: bold;
+    padding: 20px 0 0 0;
+  }
+
+  .footer-ul-div > ul > li:nth-child(2) {
+    padding-top: 20px;
+  }
+
+  .company-hide, .legal-hide, .contact-hide {
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0;
+    transition: all 0.25s linear;
+  }
+
+  .company-show, .legal-show, .contact-show {
+    visibility: visible;
+    opacity: 1;
+    height: initial;
+    transition: all 0.5s ease-in-out .1s;
+  }
+
+  .show-menu {
+    display:  inline-flex;
+    position: absolute;
+    right: 55px;
+    z-index: 100;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in;
+  }
+
+  .show-menu-contact, .show-menu-legal, .show-menu-company {
+    transform: rotate(90deg);
+    transition: transform 0.4s linear;
+  }
 }
