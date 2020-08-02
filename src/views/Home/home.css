@@ -4,6 +4,17 @@
   justify-content: space-between;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
+.btnanchor {
+  display: block;
+  height: 115px;
+  margin-top: -115px;
+  visibility: hidden;
+}
+
 .content-left {
   display: flex;
   flex-direction: column;
@@ -23,7 +34,7 @@
 }
 
 .sec-2-section {
-  margin-top: 15%;
+  margin-top: 12vw;
 }
 
 .sec-5-div-section {
@@ -304,7 +315,7 @@
   width: 30%;
 }
 
-.col > div > img,
+.col > img,
 h3,
 .col > p {
   padding: 10px 0;
@@ -317,9 +328,9 @@ h3,
 
 .sec-6-div {
   display: flex;
-  width: 85%;
+  width: 100%;
   flex-direction: column;
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 
 .sec-why-edustripe, .sec-join-edustripe {
@@ -328,19 +339,28 @@ h3,
 }
 
 .sec-why-edustripe {
-  min-height: 300px;
+  flex-direction: column;
+  width: auto;
 }
+
+
 
 .sec-why-edustripe-first {
-  width: 35%;
+  width: auto;
+  color: #fff;
+  background-color: #109CF1;
+  padding: 50px 195px;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
-.sec-why-edustripe-first > div > p {
+.sec-why-edustripe-first-text > p {
   text-transform: capitalize;
 }
 
 .sec-why-edustripe-second {
-  width: 50%
+  width: 100%
 }
 
 .sec-join-edustripe-first {
@@ -353,35 +373,50 @@ h3,
   align-items: flex-end;
   justify-content: center;
 }
-.sec-why-edustripe-first > div > h1, .sec-join-edustripe-first > h1 {
+.sec-why-edustripe-first-text > h1, .sec-join-edustripe-first > h1 {
   font-weight: bold;
   font-size: 30px;
   line-height: 45px;
   letter-spacing: 0.01em;
 }
 
-.sec-why-edustripe-first > div > p, .sec-join-edustripe-first > p {
+.sec-why-edustripe-first-text > p, .sec-join-edustripe-first > p {
+  width: 90%;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.01em;
+  padding-bottom: 0;
 }
 
 .sec-join-edustripe-first > p {
   color: #323C47;
-  padding-bottom: 0;
 }
 
 .sec-why-edustripe-buttons {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.sec-why-edustripe-buttons {
+  flex-direction: row;
+  align-items: flex-end;
+  width: 40%;
 }
 
 @media (max-width: 768px) {
   .content-left {
     width: 33%;
     padding: 0 0 0 100px;
+  }
+
+  .sec-why-edustripe-first {
+    padding: 50px 110px;
+  }
+  
+  .sec-why-edustripe-first {
+    flex-direction: column;
   }
 
   .lefts > h1 {
@@ -412,25 +447,46 @@ h3,
   }
 }
 
-@media (max-width: 1024px) {
-  .sec-2-section {
-    margin-top: 5%;
+
+@media (min-width: 1200px) {
+  .lefts > p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .lefts > h1 {
+    font-size: 35px;
+    line-height: 48px;
   }
 }
 
-@media (min-width: 1560px) {
-  .sec-2-section {
-    margin-top: 35%;
+@media (min-width: 1530px) {
+  .lefts > p {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .lefts > h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+
+@media (min-width: 1900px) {
+  .lefts > h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .col > h3 {
+    font-size: 30px;
   }
 
-  .lefts > h1 {
-    font-size: 36px;
-    line-height: 56px;
+  .col > p {
+    font-size: 25px;
   }
-  
+
   .lefts > p {
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 48px;
   }
 
   .content-left {
@@ -439,18 +495,18 @@ h3,
   }
 
   .sec-2-heading > h1, .sec-side > h1, .sec-4-side > h1,  .scside > h1 {
-    font-size: 36px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 56px;
   }
   
   .sec-2-heading > p {
-    font-size: 26px;
-    line-height: 38px;
+    font-size: 36px;
+    line-height: 48px;
   }
   
   .sec-side > div > ul > li,.sec-side > p, .scside > p, .scside > div > ul > li, .sec-4-side > p , .sec-4-side > div > ul > li {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 32px;
   }
   
   .sec-2-div, .sec-5-div {
@@ -465,8 +521,24 @@ h3,
     width: 40%;
   }
 
-  .sec, .sec-6-div {
+  .sec {
     width: 92.5%;
+  }
+
+  .sec-why-edustripe-first-text > h1, .sec-join-edustripe-first > h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+  
+  .sec-why-edustripe-first-text > p, .sec-join-edustripe-first > p {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+
+  .sec-5-div h1 {
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 
@@ -490,8 +562,8 @@ h3,
   }
 
   .lefts > h1 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .lefts > p {
@@ -625,18 +697,16 @@ h3,
   
   .col {
     padding: 10px 0;
-    width: 100%;
-  }
-
-  .col > div {
+    width: 85%;
+    flex-direction: column;
     display: flex;
   }
   
-  .col > div > h3 {
+  .col > h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 5%;
+    padding-top: 12px;
     display: flex;
     align-items: center;
   }
@@ -645,6 +715,10 @@ h3,
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .col > img {
+    width: fit-content;
   }
 
   .col > img,
@@ -659,8 +733,8 @@ h3,
     min-height: 300px;
   }
 
-  .sec-why-edustripe-first > div {
-    width: 100%;
+  .sec-why-edustripe-first-text {
+    width: 80%;
   }
   
   .sec-why-edustripe-first {
@@ -668,6 +742,12 @@ h3,
     color: #fff;
     background-color: #109CF1;
     padding: 15px 22px;
+  }
+
+  .sec-why-edustripe-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
   
   .sec-why-edustripe-first > div > p {

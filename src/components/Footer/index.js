@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './footer.css';
-
 import edustripesmall from '../../assets/images/edustripesmall.png';
 import Facebook from '../../assets/svg/Facebook';
 import Twitter from '../../assets/svg/Twitter';
 import Linkedin from '../../assets/svg/Linkedin';
+import Instagram from '../../assets/svg/Instagram';
 import RightSide from '../../assets/svg/RightSide';
 import EdustripeWhite from '../../assets/svg/EdustripeWhite';
 
@@ -40,14 +40,16 @@ const Footer = () => {
       <div className="footer-inner">
         <div>
           <div className="footer-img">
-            <img alt="" className="desktop-tablet" src={edustripesmall} />
-            <div className="mobile-only">
-              <EdustripeWhite />
+            <div className="footer-logo">
+              <a href="#top">
+                <EdustripeWhite />
+              </a>
             </div>
             <div className="footer-socials">
-              <Facebook />
-              <Twitter />
-              <Linkedin />
+              <a href={process.env.facebookUrl || "/"}><Facebook /></a>
+              <a href={process.env.twitterUrl || "/"}><Twitter /></a>
+              <a href={process.env.linkedInUrl || "/"}><Linkedin /></a>
+              <a href={process.env.instagramUrl || "/"}><Instagram /></a>
             </div>
           </div>
         </div>
@@ -67,9 +69,10 @@ const Footer = () => {
           </ul>
           <ul>
             <li className="head">Contact <span onClick={() => showLinks("contact")} className={`show-menu ${footerLink === "contact" ? "show-menu-contact" : ""}`}><RightSide /></span></li>
-            <li className="contact contact-hide">Airport road Ikeja Lagos,</li>
-            <li className="contact contact-hide">Nigeria</li>
-            <li className="phoneNumber contact contact-hide">08099778866</li>
+            <li className="contact contact-hide">{process.env.addressInfo || "294 Herbert Macaulay,"}</li>
+            <li className="contact contact-hide">{process.env.addressCityState || "Yaba, Lagos,"}</li>
+            <li className="contact contact-hide">{process.env.addressCountry || "Nigeria"}</li>
+            <li className="phoneNumber contact contact-hide">{process.env.phoneNumber || "08025129751"}</li>
           </ul>
         </div>
       </div>

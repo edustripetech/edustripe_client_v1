@@ -15,7 +15,6 @@ const Navbar = () => {
   }
   
   const handleClickOutside = (event) => {
-    console.log(event.target, event.target.id)
     if (event.target.id !== "hamburger") {
       setDropDown('hide');
     }
@@ -35,12 +34,13 @@ const Navbar = () => {
       document.removeEventListener('mouseup', handleClickOutside);
     }
   }, []);
-  // console.log(divRef, divRef && divRef.current && divRef.current.style.display);
+
   
   return (
     <div className="navbar-div">
       <div className="nav-div">
         <div className="logo">
+        <span class="anchor" id="top"></span>
           <Link to="/">
             <img alt="edustripe logo" src={edustripeLogo} />
           </Link>

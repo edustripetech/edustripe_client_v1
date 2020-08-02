@@ -20,6 +20,11 @@
   display: flex;
 }
 
+a[ id="top" ]:target ~ .homa-page {
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
+  transition: transform 5s ease-in-out;
+}  
 
 @media (min-width: 1560px) {
   .logo img {

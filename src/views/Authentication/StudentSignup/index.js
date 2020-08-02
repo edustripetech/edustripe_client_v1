@@ -25,11 +25,21 @@ const StudentSignup = () => {
           <img alt="edustripeLogo logo" src={edustripeLogo} />
         </Link>
       </div>
-      <p className="welcome-back">Create a free student account</p>
+      <p className="welcome-back">Create A School Account</p>
       <div className="form-div">
         <form className="forms">
           <div className="input-div">
             <Input
+              style={inputStyle}
+              name="schoolname"
+              type="text"
+              className="input"
+              label="Name of school:"
+              id="schoolname"
+            />
+          </div>
+          <div className="input-div">
+          <Input
               style={inputStyle}
               name="fullname"
               type="text"
@@ -53,7 +63,13 @@ const StudentSignup = () => {
             </label>
             <select>
               Select position
-              <option className="select-position">Select position</option>
+              <option className="select-position" value="">Select position</option>
+              <option className="select-position" value="Principal/Proprietor">Principal/Proprietor</option>
+              <option className="select-position" value="Head Master/Mistress">Head Master/Mistress</option>
+              <option className="select-position" value="Accountant">Accountant</option>
+              <option className="select-position" value="Assistant Principal/Proprietor">Assistant Principal/Proprietor</option>
+              <option className="select-position" value="Admin Staff">Admin Staff</option>
+              <option className="select-position" value="Teacher">Teacher</option>
             </select>
           </div>
           <div className="input-div">
@@ -88,9 +104,7 @@ const StudentSignup = () => {
               borderRadius: '5px',
               border: '1px solid #109CF1',
               outline: 'none',
-              height: '2rem',
               padding: '5px',
-              height: '2.5rem',
               fontSize: '24px',
               textAlign: 'center',
               alignItems: 'center',
@@ -102,7 +116,7 @@ const StudentSignup = () => {
       </div>
       <div>
         <p className="txt">Already have an account? Click here to <Link to="/login">Sign in</Link></p>
-        <p className="txt">Not a student? Click here to <Link to="/parent-signup">Register</Link> as a parent</p>
+        <p className="txt">Not a School? Click here to <Link to="/parent-signup">Register</Link> as a parent</p>
       </div>
     </div>
   );
