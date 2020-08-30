@@ -11,6 +11,16 @@
   margin: 0 auto;
 }
 
+.link {
+  text-decoration: none;
+  color: unset;
+
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 .footer-ul-div {
   display: flex;
   justify-content: space-around;
@@ -20,7 +30,7 @@
   line-height: 20px;
 }
 
-.footer-ul-div > ul > li {
+.footer-ul-div > ul > li, .footer-ul-div > ul > a > li {
   list-style-type: none;
   padding-top: 5px;
 }
@@ -103,7 +113,7 @@
     padding: 20px 0 0 0;
   }
 
-  .footer-ul-div > ul > li:nth-child(2) {
+  .footer-ul-div > ul > li:nth-child(2), .footer-ul-div > ul > a > li:nth-child(2) {
     padding-top: 20px;
   }
 

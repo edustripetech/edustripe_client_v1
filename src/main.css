@@ -8,12 +8,24 @@
 
 .logo img {
   width: 200px;
+  max-height: 100px;
   display: flex;
   align-self: flex-end;
 }
 
 .mobile-only {
   display: none;
+}
+
+.get-started, .noDecoration {
+  text-decoration: none;
+}
+
+.highlightContactInfo {
+  box-shadow: 1px 1px 15px 1px #109CF1;
+  border-radius: 5px;
+  padding: 1px 4px;
+  transition: all 1.5s ease-in-out;
 }
 
 .desktop-tablet {

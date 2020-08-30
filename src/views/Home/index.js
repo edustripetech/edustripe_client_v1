@@ -11,18 +11,42 @@ import secondhero from '../../assets/images/secondhero.png';
 import polygon from '../../assets/images/Polygon.png';
 import bankbuilding from '../../assets/images/bankbuilding.png';
 import cloudstorage from '../../assets/images/cloudstorage.png';
-import graphreport from '../../assets/images/graphreport.png';
 import learning from '../../assets/images/learning.png';
 import medicalhistory from '../../assets/images/medicalhistory.png';
 import laptopanalytic from '../../assets/images/laptopanalytic.png';
 import creditcard from '../../assets/images/credit_card_24px_outlined.svg';
-let scroll = window.scrollY;
+
+// Design elements
+import {
+  Dots,
+  PacmanCircle,
+  KiteElement,
+  Circles,
+  BigCircle,
+  FlowerElement, 
+  FanLikeElement,
+  PolygonElement,
+  SquareAndInvertedTriangle,
+  SquareAndCircle,
+  SquareAndCircle2,
+  PlusElement,
+  MobileDots,
+  MobileCircles,
+  MobileFlowerElement
+} from '../../assets/svg/DesignElements';
 
 const Home = () => {
+  const highlightContactInfo = () => {
+    const footerContainer = document.getElementById("contactUs");
+    footerContainer.classList.add("highlightContactInfo");
+    setTimeout(() => {
+      footerContainer.classList.remove("highlightContactInfo");
+    }, 1500)
+  }
   return (
     <div className="homa-page">
       <Navbar />
-      <section>
+      <section className="sec-one-section">
         <div className="sec-one">
           <div className="content-left">
             <div className="lefts">
@@ -34,8 +58,8 @@ technologies, making them more efficient, fast and 100% stress free. Our tools a
 flexible and reliable platform.</p>
             </div>
             <div className="lefts">
-            <span class="btnanchor" id="signup"></span>
-            <Link to="/signup">
+            <span className="btnanchor" id="signup"></span>
+            <Link className="get-started" to="/signup">
               <Button
                 label='Get Started'
                 id='register'
@@ -80,7 +104,17 @@ flexible and reliable platform.</p>
             </div>
           </div>
           <div className="hero-div">
+            <div className="dot-element-container mobile-only">
+              <div className="dot-element">
+                <MobileDots />
+              </div>
+            </div>
             <img className="hero-img" id="hero-img" alt="hero" src={heroImg} />
+            <div className="dot-element-container desktop-tablet">
+              <div className="dot-element">
+                <Dots width={window.innerWidth <= 768 ? "225px" : "100%"} height={window.innerWidth <= 768 ? "111px" : "100%"} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -90,13 +124,21 @@ flexible and reliable platform.</p>
             <p>OUR CUSTOMERS</p>
             <h1>Who can use Edustripe</h1>
           </div>
+          <div className="pacman-element-container">
+            <div className="pacman-element">
+              <PacmanCircle width={ window.innerWidth <= 1024 ? "86px" : "40%"} height={window.innerWidth <= 1024 ? "85px" : "40%"} />
+            </div>
+          </div>
           <div className="sec-2-div">
             <div className="sec-2-side-img-div">
               <img className="sec-2-img" alt="" src={verticalTri} />
+              <div className="kite-element">
+                <KiteElement width={"100%"} height={"100%"} />
+              </div>
             </div>
             <div className="sec-2-div-right sec-side">
               <h1>EDUSTRIPE FOR SCHOOLS</h1>
-              <p>Edustripe geared towards reducing workload while increasing efficiency</p>
+              <p>Edustripe is geared towards reducing workload while increasing efficiency</p>
               <div>
                 <ul>
                   <li><span>Instantly-generated reports from exams, tests, and attendance scores.</span></li>
@@ -106,7 +148,7 @@ flexible and reliable platform.</p>
                 </ul>
               </div>
               <div className="sec-btn-div">
-              <a href="#signup">
+              <a className="noDecoration" href="#signup">
                 <Button
                   label='Learn more'
                   id='learnmore'
@@ -131,6 +173,26 @@ flexible and reliable platform.</p>
           </div>
         </div>
       </section>
+      <div className="cirles-element-container mobile-only">
+        <div className="cirles-element">
+          <MobileCircles />
+        </div>
+      </div>
+      <div className="cirles-element-container desktop-tablet">
+        <div className="cirles-element">
+          <Circles width={ window.innerWidth <= 1024 ? "192px" : "100%"} height={window.innerWidth <= 1024 ? "241px" : "100%"} />
+        </div>
+      </div>
+      <div className="flower-element-container">
+        <div className="flower-element">
+          <div className="desktop-tablet">
+            <FlowerElement />
+          </div>
+          <div class="mobile-only">
+            <MobileFlowerElement />
+          </div>
+        </div>
+      </div>
       <section className="sec-3-section">
         <div className="sec-3-div sec"> 
           <div className="scside">
@@ -168,15 +230,30 @@ flexible and reliable platform.</p>
           </div>
           <div className="sec-3-side-img-div">
             <div>
+              <div className="big-circle-element-container">
+                <div className="big-circle-element">
+                  <BigCircle width={"100%"} height={"100%"} />
+                </div>
+              </div>
               <img className="sec-3-img" alt="" src={secondhero} />
             </div>
           </div>
-        </div>
+                  </div>
       </section>
       <section className="sec-4-div-section">
         <div className="sec-4-div sec">
+          <div className="fan-like-element-container">
+            <div className="fan-like-element">
+              <FanLikeElement />
+            </div>
+          </div>
           <div className="sec-side-img-div">
             <div>
+          <div className="polygon-container">
+            <div className="polygon">
+              <PolygonElement width={"100%"} height={"100%"} />
+            </div>
+          </div>
               <img className="sec-4-img" alt="" src={polygon} />
             </div>
           </div>
@@ -217,6 +294,21 @@ flexible and reliable platform.</p>
         </div>
       </section>
       <section className="sec-5-div-section">
+      <div className="square-triangle-container">
+        <div className="square-triangle">
+          <SquareAndInvertedTriangle />
+        </div>
+      </div>
+      <div className="square-circle-container desktop-tablet">
+        <div className="square-circle">
+          <SquareAndCircle />
+        </div>
+      </div>
+      <div className="square-circle-container mobile-only">
+        <div className="square-circle">
+          <SquareAndCircle2 />
+        </div>
+      </div>
         <div className="sec-5-div">
           <h1>Features</h1>
           <div className="features-div">
@@ -237,6 +329,7 @@ flexible and reliable platform.</p>
                 <p>Securely store and easily retrieve all educational information or data</p>
               </div>
             </div>
+            
             <div className="row">
               <div className="col">
                 <img alt="Custom Learning" src={learning} />
@@ -257,18 +350,24 @@ flexible and reliable platform.</p>
           </div>
         </div>
       </section>
+      <div className="plus-element-container">
+        <div className="plus-element">
+          <PlusElement />
+        </div>
+      </div>
       <section className="sec-6-section">
         <div className="sec-6-div">
-          <div className="sec-why-edustripe">
             <div className="sec-why-edustripe-second">
 
             </div>
+          <div className="sec-why-edustripe">
             <div className="sec-why-edustripe-first">
               <div className="sec-why-edustripe-first-text">
                 <h1>Why Edustripe?</h1>
                 <p>Because We Are With You All The Way Helping You Achieve All Your Goals</p>
               </div>
               <div className= "sec-why-edustripe-buttons">
+              <Link className="noDecoration" to="/signup">
                 <Button
                   label='Get Started'
                   id='getstarted'
@@ -291,28 +390,32 @@ flexible and reliable platform.</p>
                     maxWidth: "250px"
                   }}
                 />
-                <Button
-                  label='Contact Us'
-                  id='contactus'
-                  className="contactus"
-                  style={{
-                    background: 'rgba(194, 207, 224, 0.52)',
-                    color: '#fff',
-                    cursor: 'pointer',
-                    borderRadius: '5px',
-                    border: '1px solid #109CF1',
-                    outline: 'none',
-                    padding: '9px 0',
-                    width: '80%',
-                    fontSize: '16px',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    margin: '15px 0 0 0',
-                    fontWeight: '400',
-                    minWidth: "150px",
-                    maxWidth: "250px"
-                  }}
-                />
+                </Link>
+                <a className="noDecoration" href="#footerAnchor">
+                  <Button
+                    label='Contact Us'
+                    id='contactus'
+                    handleClick={() => highlightContactInfo()}
+                    className="contactus"
+                    style={{
+                      background: 'rgba(194, 207, 224, 0.52)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      borderRadius: '5px',
+                      border: '1px solid #109CF1',
+                      outline: 'none',
+                      padding: '9px 0',
+                      width: '80%',
+                      fontSize: '16px',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      margin: '15px 0 0 0',
+                      fontWeight: '400',
+                      minWidth: "150px",
+                      maxWidth: "250px"
+                    }}
+                  />
+                </a>
               </div>
             </div>
           </div>

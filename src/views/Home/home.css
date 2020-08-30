@@ -18,7 +18,7 @@
 .content-left {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
   word-break: break-word;
   padding: 30px 40px 0 160px;
   justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 .sec-2-section {
-  margin-top: 12vw;
+  margin-top: 22rem;
 }
 
 .sec-5-div-section {
@@ -62,14 +62,14 @@
 
 .lefts > h1 {
   font-weight: 800;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 60px;
 }
 
 .lefts > p {
-  font-size: 13px;
+  font-size: 24px;
   letter-spacing: 0.01em;
-  line-height: 19px;
+  line-height: 45px;
 }
 
 .sec-2-div {
@@ -191,6 +191,7 @@
 .sec-2-side-img-div {
   width: 50%;
   display: flex;
+  position: relative;
 }
 
 .sec-3-side-img-div {
@@ -258,6 +259,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
+}
+
+.sec-4-side > h1 {
+  font-size: 19px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sec-4-side > p {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 19px;
 }
 
 .sec-4-side > div > ul > li {
@@ -378,6 +393,7 @@ h3,
   font-size: 30px;
   line-height: 45px;
   letter-spacing: 0.01em;
+  margin: 0;
 }
 
 .sec-why-edustripe-first-text > p, .sec-join-edustripe-first > p {
@@ -386,7 +402,7 @@ h3,
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.01em;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .sec-join-edustripe-first > p {
@@ -405,64 +421,84 @@ h3,
   width: 40%;
 }
 
-@media (max-width: 768px) {
-  .content-left {
-    width: 33%;
-    padding: 0 0 0 100px;
-  }
-
-  .sec-why-edustripe-first {
-    padding: 50px 110px;
-  }
-  
-  .sec-why-edustripe-first {
-    flex-direction: column;
-  }
-
-  .lefts > h1 {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .lefts > p {
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    line-height: 12px;
-  }
-
-  .sec-2-div {
-    width: 85%;
-  }
-  
-  .sec-side > div > ul > li {
-    padding: 0 0 2px 0;
-  }
+.dot-element-container, .pacman-element-container, .cirles-element-container, .big-circle-element-container, .flower-element-container, .fan-like-element-container,
+.polygon-container, .square-circle-container, .square-triangle-container, .plus-element-container {
+  position: relative;
 }
 
-@media (max-width: 650px) {
-  .content-left {
-    width: 38%;
-    padding: 20px 0 0 28px;
-  }
+.dot-element {
+  position: absolute;
+  left: -8.3rem;
+  top: -7rem;
+  z-index: -2;
 }
 
-
-@media (min-width: 1200px) {
-  .lefts > p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .lefts > h1 {
-    font-size: 35px;
-    line-height: 48px;
-  }
+.kite-element {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 15%;
 }
 
-@media (min-width: 1530px) {
+.square-triangle {
+  position: absolute;
+  right: 15%;
+}
+
+.plus-element {
+  position: absolute;
+  left: 60%;
+  top: -3.5rem;
+}
+
+.square-circle {
+  position: absolute;
+  top: 16.5rem;
+}
+
+.fan-like-element {
+  position: absolute;
+  top: -9.4rem;
+  left: 7rem;
+  z-index: -1;
+}
+
+.polygon {
+  position: absolute;
+  z-index: -2;
+  left: 15%;
+  top: -1rem;
+  width: 100%;
+}
+
+.flower-element {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+}
+
+.cirles-element {
+  position: absolute;
+  top: -10rem;
+}
+
+.big-circle-element {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  left: 15%;
+}
+
+.pacman-element {
+  position: absolute;
+  right: 2rem;
+  top: -5rem;
+}
+
+@media only screen and (min-width: 1530px) {
   .lefts > p {
     font-size: 25px;
-    line-height: 36px;
+    line-height: 45px;
   }
   .lefts > h1 {
     font-size: 40px;
@@ -470,11 +506,10 @@ h3,
   }
 }
 
-
-@media (min-width: 1900px) {
+@media only screen and (min-width: 1900px) {
   .lefts > h1 {
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 4.5rem;
+    line-height: 7rem;
   }
   .col > h3 {
     font-size: 30px;
@@ -485,8 +520,8 @@ h3,
   }
 
   .lefts > p {
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 2rem;
+    line-height: 4.5rem;
   }
 
   .content-left {
@@ -540,13 +575,184 @@ h3,
     font-size: 36px;
     line-height: 48px;
   }
+
+  .sec-one-section {
+    margin-bottom: 26rem;
+  }
+
+  .sec-2-section {
+    margin-top: 22rem;
+  }
+
+  .dot-element {
+    left: -16rem;
+    top: -13rem;
+    width: 45%;
+  }
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 1024px) {
+
+  .fan-like-element {
+    top: -7.4rem;
+    left: 2.5rem;
+  }
+
+  .flower-element {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+  }
+
+  .sec-2-section {
+    margin-top: 4rem;
+  }
+  .lefts > p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .lefts > h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-left {
+    width: 35%;
+    padding: 0 0 0 48px;
+  }
+
+  .sec-why-edustripe-first {
+    padding: 50px 110px;
+  }
+  
+  .sec-why-edustripe-first {
+    flex-direction: column;
+  }
+
+  .lefts > h1 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+  }
+  /* 
+  
+  .lefts > p {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: 12px;
+  } */
+
+  .sec-2-div {
+    width: 85%;
+  }
+  
+  .sec-side > div > ul > li {
+    padding: 0 0 2px 0;
+  }
+
+  .square-circle {
+    top: 21.5rem;
+  }
+
+  .fan-like-element {
+    top: -6.7rem;
+    left: 1rem;
+  }
+  
+  .sec-3-side-img-div {
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+  
+  .cirles-element {
+    top: -7rem;
+  }
+
+  .pacman-element {
+    top: -5.5rem;
+  }
+  
+  .flower-element {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .content-left {
+    width: 38%;
+    padding: 20px 0 0 28px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .fan-like-element {
+    left: 1-rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .fan-like-element {
+    left: 0rem;
+  }
+
+  .cirles-element {
+    top: -25rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .dot-element {
+    left: initial;
+    top: -3.31rem;
+    right: 10px;
+  }
+
+  .pacman-element {
+    top: 0;
+    right: 4%;
+  }
+
+  .cirles-element {
+    top: -27rem;
+    z-index: -2;
+  }
+
+  .flower-element {
+    top: 0rem;
+    right: 0;
+  }
+
+  .fan-like-element {
+    top: 2rem;
+    left: 1rem;
+    z-index: 1;
+  }
+
   .sec-one {
     flex-direction: column;
   }
   
+  .square-circle {
+    top: 50rem;
+    z-index: -2;
+  }
+   
+   
+  .square-triangle{
+    right: 0;
+    top: -7rem;
+   }
+
+  .plus-element {
+    left: initial;
+    top: -44.5rem;
+    right: 6%;
+  }
+
   .hero-div {
     position: relative;
     width: 100%;
@@ -651,8 +857,9 @@ h3,
   }
 
   .sec-3-side-img-div {
-    width: 100%;
+    width: 85%;
     justify-content: flex-start;
+    padding-left: 0;
   }
 
   .sec {
@@ -730,7 +937,7 @@ h3,
   .sec-why-edustripe {
     flex-direction: column-reverse;
     width: auto;
-    min-height: 300px;
+    /* min-height: 300px; */
   }
 
   .sec-why-edustripe-first-text {
@@ -750,8 +957,16 @@ h3,
     width: 100%;
   }
   
+  .sec-why-edustripe-buttons > a {
+    width: 100%;
+  }
+
   .sec-why-edustripe-first > div > p {
     text-transform: capitalize;
+  }
+
+  .sec-why-edustripe-first-text > p {
+    width: 100%;
   }
   
   .sec-why-edustripe-second {
@@ -761,5 +976,9 @@ h3,
   .sec-6-div {
     width: 100%;
     margin-bottom: 0;
+  }
+
+  .sec-why-edustripe-first {
+    flex-direction: column;
   }
 }

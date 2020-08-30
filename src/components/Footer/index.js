@@ -7,6 +7,7 @@ import Linkedin from '../../assets/svg/Linkedin';
 import Instagram from '../../assets/svg/Instagram';
 import RightSide from '../../assets/svg/RightSide';
 import EdustripeWhite from '../../assets/svg/EdustripeWhite';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [footerLink, setFooterLink] = useState("none");
@@ -56,26 +57,28 @@ const Footer = () => {
         <div className="footer-ul-div">
           <ul>
             <li className="head">Company <span onClick={() => showLinks("company")} className={`show-menu ${footerLink === "company" ? "show-menu-company" : ""}`}> <RightSide /> </span></li>
-            <li className="company company-hide">About us</li>
+            <Link className="link" to="/about"><li className="company company-hide">About us</li></Link>
             <li className="company company-hide">Blog</li>
-            <li className="company company-hide">FAQ</li>
+            <li className="company company-hide">FAQ</li>    
             <li className="company company-hide">Contact</li>
             <li className="company company-hide">Help</li>
           </ul>
           <ul>
           <li className="head">Legal <span onClick={() => showLinks("legal")} className={`show-menu ${footerLink === "legal" ? "show-menu-legal" : ""}`}><RightSide /></span></li>
-            <li className="legal legal-hide">Privacy policy</li>
+          <Link className="link" to="/privacy"><li className="legal legal-hide">Privacy policy</li></Link>
             <li className="legal legal-hide">Term of use</li>
           </ul>
-          <ul>
+          <ul id="contactUs">
             <li className="head">Contact <span onClick={() => showLinks("contact")} className={`show-menu ${footerLink === "contact" ? "show-menu-contact" : ""}`}><RightSide /></span></li>
             <li className="contact contact-hide">{process.env.addressInfo || "294 Herbert Macaulay,"}</li>
             <li className="contact contact-hide">{process.env.addressCityState || "Yaba, Lagos,"}</li>
             <li className="contact contact-hide">{process.env.addressCountry || "Nigeria"}</li>
             <li className="phoneNumber contact contact-hide">{process.env.phoneNumber || "08025129751"}</li>
+            <li className="contact contact-hide">{process.env.email || "info@edustripe.com"}</li>
           </ul>
         </div>
       </div>
+        <span className="footeranchor" id="footerAnchor"></span>
     </div>
   );
 }
