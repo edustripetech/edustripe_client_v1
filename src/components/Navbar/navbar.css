@@ -37,7 +37,7 @@
 
 .navs > ul>li {
   padding: 0.6rem 3.125rem;
-  font-size: 16px;
+  font-size: 15px;
   align-items: center;
   display: flex;
 }
@@ -128,7 +128,7 @@
 
 @media (min-width: 1900px) {
   .navs > ul>li {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 
@@ -139,7 +139,7 @@
   
   .navs > ul>li {
     padding: 0.1rem 0.5rem;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -166,7 +166,7 @@
   
   .navs > ul>li {
     padding: 0.1rem 0.5rem;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 

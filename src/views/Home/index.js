@@ -251,7 +251,7 @@ flexible and reliable platform.</p>
             <div>
           <div className="polygon-container">
             <div className="polygon">
-              <PolygonElement width={"100%"} height={"100%"} />
+              <PolygonElement style={{zIndex: '-2'}} width={"100%"} height={"100%"} />
             </div>
           </div>
               <img className="sec-4-img" alt="" src={polygon} />

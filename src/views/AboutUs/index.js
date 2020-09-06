@@ -10,7 +10,7 @@ import ourStoryImg from "../../assets/images/AboutUs_Image1.png";
 import ceo from "../../assets/images/Jide About Us.png";
 import cto from "../../assets/images/Tolu About Us.png";
 import DEng from "../../assets/images/Chuks About Us.png";
-// import PM from "../../assets/images/"
+import ctoMartins from "../../assets/images/martinsobayomi.jpg"
 import EngManger1 from "../../assets/images/Emeka About Us.png"
 import EngManger2 from "../../assets/images/Adeola.About.Us.jpg"
 
@@ -58,11 +58,11 @@ const AboutUs = () => {
             <div>
               <Card image={DEng} alt={"D.Eng"} title={"Co-Founder and Director of Engineering"} name={"Chukwudi Ngwobia"} />
             </div>
-            {/* <div>
-              <Card alt={"P.M"} title={" Project Manager"} name={"Samuel Oyegbemi"} />
-            </div> */}
             <div>
-              <Card image={EngManger1} alt={"Eng.Manager"} title={"Co-Founder and Engineering Manager"} name={"Emeka Ofe"} />
+              <Card image={ctoMartins} alt={"C.T.O martins"} title={"Co-Founder and Co-C.T.O"} name={"Martins Obayomi"} />
+            </div>
+            <div>
+              <Card image={EngManger1} alt={"Eng.Manager"} title={"Co-Founder and Chief Information Officer"} name={"Emeka Ofe"} />
             </div>
             <div>
               <Card image={EngManger2} alt={"Eng.Manager"} title={"Co-Founder and Engineering Manager"} name={"Adeola Adeyemo"} />

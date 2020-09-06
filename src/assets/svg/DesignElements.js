@@ -88,8 +88,8 @@ export const FanLikeElement = ({ width="70", height="71", color="#FF6242" }) => 
 
 );
 
-export const PolygonElement = ({ width="324", height="286", color="#F8F8F8" }) => (
-  <svg width={width} height={height} viewBox="0 0 324 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const PolygonElement = ({zIndex="-2", width="324", height="286", color="#F8F8F8" }) => (
+  <svg className="polygon-element" width={width} height={height} zIndex={zIndex} viewBox="0 0 324 286" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M161.975 0L323.077 285.469H0.872345L161.975 0Z" fill={color}/>
   </svg>
 );
