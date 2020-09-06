@@ -1,0 +1,156 @@
+.header-section {
+  background: rgba(249, 54, 50, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 245px;
+  z-index: -1;
+}
+
+
+.header-text > div > h1 {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.body {
+  width: 75%;
+  margin: 170px auto 100px auto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+section h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  margin-bottom: 27px;
+  margin-top: 27px;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+.sec1 {
+  margin-bottom: 50px;
+}
+
+
+.privacy-why-edustripe {
+  flex-direction: row;
+  display: flex;
+  width: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  background-color: #109CF1;
+  justify-content: space-evenly;
+}
+
+.privacy-why-edustripe-first {
+  width: 75%;
+  flex-direction: row;
+  display: flex;
+}
+
+.privacy-why-edustripe-first-text > p {
+  text-transform: capitalize;
+}
+
+.privacy-why-edustripe-second { 
+  width: 100%
+}
+
+.privacy-why-edustripe-first-text > h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.privacy-why-edustripe-first-text > p  {
+  width: 90%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
+}
+
+.privacy-why-edustripe-buttons {
+  display: flex;
+  flex-direction: row;
+  /* height: fit-content; */
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .join-edustripe {
+    width: 88%;
+    margin: 0 auto 50px auto; 
+  }
+
+}
+
+@media (min-width: 1900) {
+  .privacy-why-edustripe-first-text > h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+  
+  .privacy-why-edustripe-first-text > p {
+    font-size: 25px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 425px) {
+  .privacy-why-edustripe {
+    flex-direction: column;
+    width: auto;
+    min-height: 300px;
+    padding: 0;
+  }
+
+  .header-text {
+    margin-top: 50px;
+  }
+
+  .privacy-why-edustripe-first-text {
+    width: 100%;
+  }
+  
+  .privacy-why-edustripe-first {
+    flex-direction: column;
+    width: auto;
+    color: #fff;
+    background-color: #109CF1;
+    padding: 15px 22px;
+  }
+
+  .privacy-why-edustripe-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .privacy-why-edustripe-first > div > p {
+    text-transform: capitalize;
+  }
+  
+  .privacy-why-edustripe-second {
+    width: 100%
+  }
+
+}
+
+

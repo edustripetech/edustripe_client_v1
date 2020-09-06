@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import Button from '../Button'
 import edustripeLogo from '../../assets/images/Edustripelogo.png';
+import edustripeLogoWhite from '../../assets/images/All white.png';
 
-const Navbar = () => {
+const Navbar = ({ logo = "" }) => {
   const [dropDown, setDropDown] = useState('hide');
   // const divRef = useRef(null);
   let buttonRef = null;
@@ -15,7 +16,6 @@ const Navbar = () => {
   }
   
   const handleClickOutside = (event) => {
-    console.log(event.target, event.target.id)
     if (event.target.id !== "hamburger") {
       setDropDown('hide');
     }
@@ -35,14 +35,15 @@ const Navbar = () => {
       document.removeEventListener('mouseup', handleClickOutside);
     }
   }, []);
-  // console.log(divRef, divRef && divRef.current && divRef.current.style.display);
+
   
   return (
     <div className="navbar-div">
       <div className="nav-div">
         <div className="logo">
+        <span className="anchor" id="top"></span>
           <Link to="/">
-            <img alt="edustripe logo" src={edustripeLogo} />
+            <img alt="edustripe logo" src={logo === "white" ? edustripeLogoWhite : edustripeLogo} />
           </Link>
         </div>
         <div className="navs desktop-tablet">
@@ -72,7 +73,7 @@ const Navbar = () => {
             className={`hamburger hamburger-${dropDown}`}
             handleClick={handleClick}
             style={{
-              background: '#fff',
+              background: 'transparent',
               color: '#000',
               cursor: 'pointer',
               outline: 'none',

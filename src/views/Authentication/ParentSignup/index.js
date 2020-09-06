@@ -80,9 +80,7 @@ const ParentSignup = () => {
                 borderRadius: '5px',
                 border: '1px solid #109CF1',
                 outline: 'none',
-                height: '2rem',
                 padding: '5px',
-                height: '2.5rem',
                 fontSize: '24px',
                 textAlign: 'center',
                 alignItems: 'center',
@@ -94,7 +92,7 @@ const ParentSignup = () => {
       </div>
       <div>
         <p className="txt">Already have an account? Click here to <Link to="/login">Sign in</Link></p>
-        <p className="txt">Not a parent? Click here to <Link to="/student-signup">Register</Link> as a student</p>
+        <p className="txt">Not a parent? Click here to <Link to="/student-signup">Register</Link> as a school</p>
       </div>
     </div>
   );

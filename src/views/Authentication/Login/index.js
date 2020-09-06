@@ -66,9 +66,7 @@ const Login = () => {
                 borderRadius: '5px',
                 border: '1px solid #109CF1',
                 outline: 'none',
-                height: '2rem',
                 padding: '5px',
-                height: '2.5rem',
                 fontSize: '24px',
                 textAlign: 'center',
                 alignItems: 'center',
@@ -80,7 +78,7 @@ const Login = () => {
         </form>
       </div>
       <div>
-        <p className="txt">Don’t have an account? Sign up as a <Link to="/parent-signup">Parent</Link> or a <Link to="/parent-signup">Student</Link></p>
+        <p className="txt">Don’t have an account? Sign up as a <Link to="/parent-signup">Parent</Link> or a <Link to="/parent-signup">School</Link></p>
       </div>
     </div>
   );

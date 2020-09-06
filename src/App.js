@@ -23,6 +23,14 @@ const StudentSignup = lazy(() =>
   import(/* webpackChunkName: "StudentSignup" */ './views/Authentication/StudentSignup')
 );
 
+const AboutUs = lazy(() =>
+  import(/* webpackChunkName: "AboutUs" */ './views/AboutUs')
+);
+
+const Privacy = lazy(() =>
+  import(/* webpackChunkName: "Privacy" */ './views/Privacy')
+);
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -34,6 +42,8 @@ const App = () => {
             <Route path='/signup' exact component={Signup} />
             <Route path='/parent-signup' exact component={ParentSignup} />
             <Route path='/student-signup' exact component={StudentSignup} />
+            <Route path='/about' exact component={AboutUs} />
+            <Route path='/privacy' exact component={Privacy} />
           </Switch>
         </Suspense>
       </div>
