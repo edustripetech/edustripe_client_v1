@@ -37,7 +37,7 @@
 
 .navs > ul>li {
   padding: 0.6rem 3.125rem;
-  font-size: 15px;
+  font-size: 15px !important;
   align-items: center;
   display: flex;
 }
