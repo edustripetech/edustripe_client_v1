@@ -9,6 +9,7 @@ import './aboutus.css';
 import ourStoryImg from "../../assets/images/AboutUs_Image1.png";
 import ceo from "../../assets/images/Jide About Us.png";
 import cto from "../../assets/images/Tolu About Us.png";
+import projectManager from "../../assets/images/samuel.png"
 import DEng from "../../assets/images/Chuks About Us.png";
 import ctoMartins from "../../assets/images/martinsobayomi.jpg"
 import EngManger1 from "../../assets/images/Emeka About Us.png"
@@ -48,10 +49,12 @@ const AboutUs = () => {
       <section className="our-team-section">
         <div className="our-team">
           <h1>Our team</h1>
-          <div className="our-team-cards">
+          <div className="ceo-card">
             <div>
               <Card image={ceo} alt={"C.E.O"} title={"Co-Founder and C.E.O"} name={"Babajide Esho"} />
             </div>
+          </div>
+          <div className="our-team-cards">
             <div>
               <Card image={cto} alt={"C.T.O"} title={"Co-Founder and Co-C.T.O"} name={"Tolulope Odueke"} />
             </div>
@@ -60,6 +63,9 @@ const AboutUs = () => {
             </div>
             <div>
               <Card image={ctoMartins} alt={"C.T.O martins"} title={"Co-Founder and Co-C.T.O"} name={"Martins Obayomi"} />
+            </div>
+            <div>
+              <Card image={projectManager} alt={"Project Manager"} title={"Project Manager"} name={"Samuel Oyegbemi"} />
             </div>
             <div>
               <Card image={EngManger1} alt={"Eng.Manager"} title={"Co-Founder and Chief Information Officer"} name={"Emeka Ofe"} />
