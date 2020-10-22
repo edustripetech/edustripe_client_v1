@@ -68,10 +68,10 @@ const AboutUs = () => {
               <Card image={projectManager} alt={"Project Manager"} title={"Project Manager"} name={"Samuel Oyegbemi"} />
             </div>
             <div>
-              <Card image={EngManger1} alt={"Eng.Manager"} title={"Co-Founder and Chief Information Officer"} name={"Emeka Ofe"} />
+              <Card image={EngManger1} alt={"Eng.Manager"} title={"Chief Information Officer"} name={"Emeka Ofe"} />
             </div>
             <div>
-              <Card image={EngManger2} alt={"Eng.Manager"} title={"Co-Founder and Engineering Manager"} name={"Adeola Adeyemo"} />
+              <Card image={EngManger2} alt={"Eng.Manager"} title={"Engineering Manager"} name={"Adeola Adeyemo"} />
             </div>
           </div>
         </div>
