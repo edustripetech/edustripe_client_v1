@@ -54,12 +54,12 @@ const Navbar = ({ logo = "" }) => {
               </Link>
             </li>
             <li>
-              <Link to="/login">
+              <Link to="#">
                 Login
               </Link>
             </li>
             <li className="reg">
-              <Link to="/signup">
+              <Link to="#">
                 Register
               </Link>
             </li>
@@ -90,12 +90,12 @@ const Navbar = ({ logo = "" }) => {
                 About us
           </li>
             </Link>
-            <Link to="/login">
+            <Link to="#">
           <li>
               Login
           </li>
             </Link>
-            <Link to="/signup">
+            <Link to="#">
           <li>
               Register
           </li>
