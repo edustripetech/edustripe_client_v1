@@ -35,6 +35,8 @@ import {
   MobileFlowerElement
 } from '../../assets/svg/DesignElements';
 
+import { BusinessDay, TechCity, InnovationVillage, Meristem, Monnify, Providus } from "../../assets/svg";
+
 const Home = () => {
   const highlightContactInfo = () => {
     const footerContainer = document.getElementById("contactUs");
@@ -115,6 +117,16 @@ flexible and reliable platform.</p>
                 <Dots width={window.innerWidth <= 768 ? "225px" : "100%"} height={window.innerWidth <= 768 ? "111px" : "100%"} />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="featuredSection">
+        <div>
+          <p>We've Been Featured On</p>
+          <div className="featuredIcons">
+            <div><BusinessDay /></div>
+            <div><TechCity /></div>
+            <div><InnovationVillage /></div>
           </div>
         </div>
       </section>
@@ -347,6 +359,16 @@ flexible and reliable platform.</p>
                 <p>Access quick loans for educational expenses and repay in installments</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="partnersSection">
+        <div>
+          <p>Our Partners</p>
+          <div className="partnersIcons">
+            <div><Meristem /></div>
+            <div><Monnify /></div>
+            <div><Providus /></div>
           </div>
         </div>
       </section>
