@@ -35,7 +35,7 @@ import {
   MobileFlowerElement
 } from '../../assets/svg/DesignElements';
 
-import { BusinessDay, TechCity, InnovationVillage, Meristem, Monnify, Providus } from "../../assets/svg";
+import { BusinessDay, TechCity, InnovationVillage, Meristem, Monnify, DisruptAfrica, SterlingBank } from "../../assets/svg";
 
 const Home = () => {
   const highlightContactInfo = () => {
@@ -127,6 +127,7 @@ flexible and reliable platform.</p>
             <div><BusinessDay /></div>
             <div><TechCity /></div>
             <div><InnovationVillage /></div>
+            <div><DisruptAfrica /></div>
           </div>
         </div>
       </section>
@@ -368,7 +369,7 @@ flexible and reliable platform.</p>
           <div className="partnersIcons">
             <div><Meristem /></div>
             <div><Monnify /></div>
-            <div><Providus /></div>
+            <div><SterlingBank /></div>
           </div>
         </div>
       </section>
