@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-import Card from '../../components/Card';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 import './privacy.css';
 
-const AboutUs = () => {
+const Privacy = () => {
   return (
     <div className="about-container">
       <Navbar logo={"white"} />
@@ -152,5 +151,5 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs;
+export default Privacy;
 

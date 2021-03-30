@@ -31,6 +31,10 @@ const Privacy = lazy(() =>
   import(/* webpackChunkName: "Privacy" */ './views/Privacy')
 );
 
+const TermsOfUse = lazy(() =>
+  import(/* webpackChunkName: "Privacy" */ './views/TermsOfUse')
+);
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -44,6 +48,7 @@ const App = () => {
             <Route path='/student-signup' exact component={StudentSignup} />
             <Route path='/about' exact component={AboutUs} />
             <Route path='/privacy' exact component={Privacy} />
+            <Route path='/terms' exact component={TermsOfUse} />
           </Switch>
         </Suspense>
       </div>
