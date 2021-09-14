@@ -11,7 +11,6 @@ import ceo from "../../assets/images/Jide About Us.png";
 import cto from "../../assets/images/Tolu About Us.png";
 import projectManager from "../../assets/images/samuel.png"
 import DEng from "../../assets/images/Chuks About Us.png";
-import ctoMartins from "../../assets/images/martinsobayomi.jpg"
 import EngManger1 from "../../assets/images/Emeka About Us.png"
 import EngManger2 from "../../assets/images/Adeola.About.Us.jpg"
 
@@ -60,9 +59,6 @@ const AboutUs = () => {
             </div>
             <div>
               <Card image={DEng} alt={"D.Eng"} title={"Co-Founder and Director of Engineering"} name={"Chukwudi Ngwobia"} />
-            </div>
-            <div>
-              <Card image={ctoMartins} alt={"C.T.O martins"} title={"Co-Founder and Co-C.T.O"} name={"Martins Obayomi"} />
             </div>
             <div>
               <Card image={projectManager} alt={"Project Manager"} title={"Project Manager"} name={"Samuel Oyegbemi"} />
