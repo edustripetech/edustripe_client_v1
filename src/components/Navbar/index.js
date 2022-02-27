@@ -54,14 +54,14 @@ const Navbar = ({ logo = "" }) => {
               </Link>
             </li>
             <li>
-              <Link to="/login">
+              <a href="https://app.edustripe.com/login" target="_blank">
                 Login
-              </Link>
+              </a>
             </li>
             <li className="reg">
-              <Link to="/signup">
+              <a href="https://app.edustripe.com/signup" target="_blank">
                 Register
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -90,16 +90,16 @@ const Navbar = ({ logo = "" }) => {
                 About us
           </li>
             </Link>
-            <Link to="/login">
+            <a href="https://app.edustripe.com/login" target="_blank">
           <li>
               Login
           </li>
-            </Link>
-            <Link to="/signup">
+            </a>
+            <a  href="https://app.edustripe.com/signup" target="_blank">
           <li>
               Register
           </li>
-            </Link>
+            </a>
         </ul>
 
       </div>

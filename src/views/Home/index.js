@@ -61,7 +61,7 @@ flexible and reliable platform.</p>
             </div>
             <div className="lefts">
             <span className="btnanchor" id="signup"></span>
-            <Link className="get-started" to="/signup">
+            <a className="get-started" target="_blank" href="https://app.edustripe.com/signup">
               <Button
                 label='Get Started'
                 id='register'
@@ -102,7 +102,7 @@ flexible and reliable platform.</p>
                   justifyContent: 'center'
                 }}
               />
-            </Link>
+            </a>
             </div>
           </div>
           <div className="hero-div">
@@ -390,7 +390,7 @@ flexible and reliable platform.</p>
                 <p>Because We Are With You All The Way Helping You Achieve All Your Goals</p>
               </div>
               <div className= "sec-why-edustripe-buttons">
-              <Link className="noDecoration" to="/signup">
+              <a className="noDecoration" href="https://app.edustripe.com/login" target="_blank">
                 <Button
                   label='Get Started'
                   id='getstarted'
@@ -413,7 +413,7 @@ flexible and reliable platform.</p>
                     maxWidth: "250px"
                   }}
                 />
-                </Link>
+                </a>
                 <a className="noDecoration" href="#footerAnchor">
                   <Button
                     label='Contact Us'

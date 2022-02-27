@@ -84,7 +84,7 @@ const AboutUs = () => {
               <div>
                 <p>Get on board the best Educational community and achieve all your goals.</p>
                 <div className= "join-edustripe-button">
-                <Link className="get-started" to="/signup">
+                <a className="get-started" href="https://app.edustripe.com/signup" target="_blank">
                   <Button
                     label='Request a free demo now!'
                     id='getstarted'
@@ -106,7 +106,7 @@ const AboutUs = () => {
                       maxWidth: "250px"
                     }}
                   />
-                  </Link>
+                  </a>
                 </div>
 
               </div>
